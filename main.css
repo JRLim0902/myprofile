@@ -1,0 +1,138 @@
+.body{
+    font: 400 Lato, sans-serif;
+    line-height: 1.8;
+    color: #818181
+}
+
+p{
+    font-size: 18px;
+}
+
+.jumbotron{
+    font-family: Montserrat, sans-serif;
+    background: linear-gradient(to top, #ccffff 0%, #9999ff 100%);
+    color:black;
+    padding: 20px 20px;
+}
+
+.container-fluid{
+    padding: 2.5% 5% 2.5% 5%; /*top, rght, bottom, left*/
+    border: blueviolet;
+}
+.logo{
+    font-size: 200px;
+    color:blueviolet;
+    padding: 30px;
+}
+.logo-small{
+    font-size: 50px;
+    padding:0%;
+    color:blueviolet
+}
+
+@media screen and (max-width: 768px){
+    .col-sm-4 .col-sm-6{
+        text-align: center;
+        margin: 25px 0;
+    }
+}
+
+h2 {
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #303030;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+
+.education h2{
+    text-align: center;
+}
+.work h2{
+    text-align: center;
+}
+  
+  h4 {
+    font-size: 19px;
+    line-height: 1.375em;
+    color: #303030;
+    font-weight: 400;
+    margin-bottom: 15px;
+  }
+
+.list{
+    font-size: 18px;
+}
+button{
+    padding-top: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    display: block;
+}
+.btn{
+    font-weight: 600;
+}
+  
+
+.col-sm-6{
+    padding-top: 0%;
+    padding-right: 10px;
+    border-left: dashed;
+    border-color: blueviolet;
+    height: max-content;
+   
+}
+
+.rotateanim {visibility: hidden;} /*this visibility has to be set for it to work, switch to visible still works, dunno why*/
+.rotate{
+    animation-name: rotate;
+    -webkit-animation-name: rotate;
+    animation-duration: 10s;
+    -webkit-animation-duration: 4s;
+    visibility: visible; /*this line has to be here to make the element visible*/
+}
+
+@keyframes rotate{
+    0%{
+        opacity: 1;
+        transform: rotate(0deg);
+    }
+    25%{
+        opacity: 1;
+        transform: rotate(20deg);
+    }
+    50%{
+        opacity: 1;
+        transform: rotate(0deg);
+    }
+    75%{
+        opacity: 1;
+        transform: rotate(-20deg);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0deg);
+    }
+}
+@-webkit-keyframes rotate{
+    0%{
+        opacity: 0;
+        transform: rotate(0%);
+    }
+    25%{
+        opacity: 1;
+        transform: rotate(20%);
+    }
+    50%{
+        opacity: 0;
+        transform: rotate(0%);
+    }
+    75%{
+        opacity: 0;
+        transform: rotate(-20%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
