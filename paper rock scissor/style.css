@@ -65,12 +65,22 @@ body.wrong{
 #start-btn, #next-rnd{
     background-color: rgb(2, 2, 14);
     border-radius: 5px;
-    color: white;
+    color:white;
     width: 30%;
     height: auto;
     font-size: 1.5rem;
     padding: 10px;
     cursor: pointer;
+}
+
+@media screen and (max-width: 1000px){
+    #start-btn{
+        text-align: center;
+        width:auto;
+        height: auto;
+        font-size: 1rem;
+        color: white;
+    }
 }
 
 #next-rnd{
@@ -87,6 +97,22 @@ body.wrong{
     justify-content: center;
     align-items: center;
 }
+
+@media screen and (max-width: 1000px){
+    #rock, #scissors, #paper{
+    width: 40%;
+    height: 60%;
+    /*border: 3px solid red;*/
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+}
+
+
+
+
 .fa-hand-rock-o, .fa-hand-paper-o, .fa-hand-scissors-o{
     pointer-events: none;
 }
