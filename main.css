@@ -4,17 +4,29 @@
     color: #818181
 }
 
+.main {
+    background-image: url(./coffee1.jpeg);
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
 p{
     font-size: 18px;
-}
+    font-weight: bolder;
 
 .jumbotron{
     font-family: Montserrat, sans-serif;
-    background: linear-gradient(to top, #ccffff 0%, #9999ff 100%);
+    background: #DAE2F8;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #d6b0b0, #DAE2F8);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #e2c3c3, #DAE2F8); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    ;
+    opacity: 0.8;
     color:black;
     padding: 20px 20px;
+    box-shadow: 0px 10px 50px lavender;
 }
-
+    
 .container-fluid{
     padding: 2.5% 5% 2.5% 5%; /*top, rght, bottom, left*/
     border: blueviolet;
