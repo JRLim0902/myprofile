@@ -1,0 +1,252 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*body {
+    font-family: 'Roboto Mono', monospace;
+}*/
+
+.main_content {
+    height: 100vh;
+    width: 100vw;
+    background-image: url(bag_grass.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    opacity: 0.75;
+    z-index: -1;
+    overflow: hidden;
+}
+
+/*navigation part*/
+.navbar-container{
+    padding: 0 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.burger {
+    display: none;
+}
+
+.navlink {
+    font-size: 30px;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 20px;
+    width: 40%;
+    z-index: 3;
+}
+
+.alink {
+    text-decoration: none;
+    font-family: 'Ubuntu', cursive;
+    color: black;
+}
+
+.logo {
+    background: #f953c6;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #b91d73, #f953c6);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #b91d73, #f953c6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    -webkit-background-clip: text; /* make the background be the text COLOR*/
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; /* MAKE THE BACKGROUD COLOR WORKS*/
+    -moz-text-fill-color: transparent; 
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 4rem;
+    font-family: 'Salsa', cursive;
+    font-weight: 1000;
+    margin-right: 20px;
+}
+
+.dandelion {
+    overflow: hidden;
+    height: 80vh;
+    width: 90vw;
+    background-image: url(./dandelion.png);
+    background-size: 40vh;
+    background-repeat: repeat;
+    position: absolute;
+    z-index: 2;
+    animation: drift 5s ease-in infinite;
+}
+
+@keyframes drift {
+    0% {top:10px; right: 100px}
+    25% {top:15px; right:80px}
+    50% {top: 30px; right: 50px}
+    75% {top: 15px; right: 80px}
+    100% {top:10px; right: 100px}
+}
+
+.intro {
+    position: absolute;
+    left: 50%;
+    top: 35%;
+    transform: translate(-50%, -50%);
+    align-items: center;
+    text-align: center;
+    font-size: 1.6rem;
+}
+
+@media screen and (max-width: 960px) {
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .logo {
+        padding-left: 10px;
+    }
+    
+    .navbar-container {
+        padding: 0 0px;
+        display: flex;
+        justify-content: space-between;
+        z-index: 3;
+        max-width: 1300px;
+        width: 100%;
+    }
+    .navlink {
+        display: none;
+    }
+    .burger {
+        display: block;
+        margin-right: 10px;
+        cursor: pointer;
+    }
+
+    .navlink-active {
+        position: absolute;
+        font-size: 30px;
+        display: grid;
+        grid-template-columns: auto;
+        align-items: center;
+        text-align: center;
+        height: 60vh;
+        width: 100%;
+        top: 10%;
+        z-index: 3;
+        margin-left: 0;
+        background-color: rgb(247, 141, 247,.8);
+    }
+    .main_content {
+        background: none;
+    }
+
+    .intro {
+        top: 40%;
+        display: block;
+    }
+}
+
+
+/* home css */
+.home-container {
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    height: 100vh;
+    align-items: center;
+}
+
+.product-category {
+    border: red solid;
+    text-align: center;
+    height: 50%;
+}
+
+ul{
+    list-style: none;;
+    cursor: pointer;
+}
+
+li {
+    padding: 20px;
+}
+
+.slideshow-container {
+    display: flex;
+    height: 100%;
+    width: 60%;
+    border: yellow solid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.slides {
+    display: block;
+    height: 90%; /* relation to parent .slideshow-container*/
+    justify-content: center; /* to make img center*/
+    align-items: center; 
+    background-color: aqua;
+}
+
+img {
+    border: black solid;
+    border-radius: 30%;
+    object-fit: contain;
+    height: 90%;   
+}
+
+@media screen and (max-width: 960px) {
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    .home-container {
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        height: 100vh;
+        align-items: center;
+    }
+    ul {
+        display: inline-flex;
+        list-style: none;
+        cursor: pointer;
+        justify-content: space-between;
+    }
+    
+    .product-category {
+        border: red solid;
+        justify-content: center;
+        text-align: center;
+        flex: 100%;
+    }
+    
+    .slideshow-container {
+        margin-left: 5px;
+        display: flex;
+        height: 80%;
+        width: 100%;
+        border: yellow solid;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex: 100%;
+    }
+    
+    .slides {
+        display: flex;
+        height: 90%; /* relation to parent .slideshow-container*/
+        justify-content: center; /* to make img center*/
+        align-items: center; 
+        background-color: aqua;
+    }
+    
+    img {
+        flex: 100%;
+        border: black solid;
+        border-radius: 30%;
+        object-fit: contain;
+        height: 70%;   
+    }
+}
+

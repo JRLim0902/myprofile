@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <link rel="stylesheet" href="./shop.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fleur+De+Leah&family=Roboto+Mono&family=Salsa&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar-container">
+        <div class="logo">
+            <a href="./index.html">Xiu Xiu</a>
+        </div>
+        <div class="navlink">
+            <a class="alink" href=#contact>Contact</a>
+            <a class="alink" href=#>Facebook</a>
+            <!--<a class="alink" href="./about.html">Contact</a>-->
+        </div>
+        <div class="burger">
+            <i class="fa fa-bars" style="font-size: 40px;"></i>
+        </div>
+    </nav>
+
+    <section class="section-container">
+        <div class="new-arrivals">
+            <div class="mySlides">
+                <img src="./clothes1.jpg">
+                <h1>Business Casual</h1>
+            </div>
+            <div class="mySlides">
+                <h1>chill & relax</h1>
+                <img src="./pants9.jpg">
+            </div>
+            <div class="mySlides">
+                <img src="./shop.jpg">
+                <h1>styles that you love</h1>
+            </div>
+            <a class="prev" onclick="plusSlides(-2)">&#10094</a>
+            <a class="next" onclick="plusSlides(0)">&#10095</a>
+        </div>
+        <div class="dots">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+        </div>
+        <div class="about-description">
+            <h1>Xiu Xiu</h1>
+            <p>Started in the year 2010, we have been in the business for over 10 years!<br> We are a humble little shop
+                that offers a variety of fashion products, from socks to bags... at a humble price!</p>
+        </div>
+        <div class="category tops" style="background-color: #f5d2d3;">
+            <img class="category-img" src="./shirt1.jpg">
+            <div class="description">
+                <h2>Tops / Shirts</h2>
+                <p>Have to find some nicer pictures</p>
+            </div>
+        </div>
+        <div class="category dresses" style="background-color: #9ab7d3;">
+            <div class="description">
+                <h2>Skirts / Dresses</h2>
+                <p>Insert nice pictures of dresses</p>
+            </div>
+            <img class="category-img" src="./clothes2.jpg">
+        </div>
+        <div class="category pants" style="background-color: #dfccf1;">
+            <img class="category-img" src="./pants7.jpg">
+            <div class="description">
+                <h2>Pants</h2>
+                <p>Get some pants pictures from mom.</p>
+            </div>
+        </div>
+        <div id="contact" class="contact">
+            <h1>Contact Us</h1>
+            <ul>
+                <li>
+                    <i class="fa fa-home" style="font-size: 20px; padding-right: 5px;"></i>
+                    <p>Tambak, Pontian, Johor</p>
+                </li>
+                <li>
+                    <i class="fa fa-fax" style="font-size: 20px;padding-right: 5px;"></i>
+                    <p>011-1234 5678</p>
+                </li>
+
+                <li>
+                    <i class="fa fa-envelope" style="font-size: 20px; padding-right: 5px;"></i>
+                    <p>company@email.com</p>
+                </li>
+            </ul>
+
+        </div>
+    </section>
+
+    <script src="./scripts.js"></script>
+</body>
+
+</html>

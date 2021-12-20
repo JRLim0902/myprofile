@@ -1,0 +1,339 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto Mono', monospace;   
+}
+
+/*navigation part*/
+.navbar-container{
+    padding: 0 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(247, 141, 247,0.3);
+}
+.burger {
+    display: none;
+}
+
+.navlink {
+    font-size: 30px;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 20px;
+    width: 40%;
+}
+
+.alink {
+    text-decoration: none;
+    font-family: 'Ubuntu', cursive;
+    color: black;
+}
+
+.logo {
+    background: #f953c6;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #b91d73, #f953c6);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #b91d73, #f953c6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    -webkit-background-clip: text; /* make the background be the text COLOR*/
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; /* MAKE THE BACKGROUD COLOR WORKS*/
+    -moz-text-fill-color: transparent; 
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 4rem;
+    font-family: 'Salsa', cursive;
+    font-weight: 1000;
+    margin-right: 20px;
+}
+
+.section-container {
+    height: 100vh;
+    width: 100vw;
+    width: 100%;
+    display: block;
+}
+
+/*slides show*/
+.new-arrivals {
+    width: 100%;
+    height: 80%;
+    position: relative;
+    margin: auto;
+}
+
+.mySlides {
+    display: none; /* set to toggle*/
+    height: 100%;
+    align-items: center;;
+}
+
+.mySlides h1 {
+    flex: 60%;
+    font-family: "Salsa cursive";
+    font-size: 3rem;
+    text-align: center;
+}
+
+.mySlides img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* position next botton to the right*/
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: hotpink;
+}
+
+.dots{
+    margin: 10px 0px;
+    text-align: center;
+}
+
+.dot{
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: backround-color 0.6s ease-in-out;
+}
+
+.active, .dot:hover {
+    background-color: hotpink;
+}
+
+.about-description {
+    width: 100vw;
+    height: 50%;
+    font-family:'Roboto Mono', monospace;
+    text-align: center;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+}
+.about-description h1 {
+    font-size: 3rem;
+    background: #f953c6;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #b91d73, #f953c6);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #b91d73, #f953c6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    -webkit-background-clip: text; /* make the background be the text COLOR*/
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; /* MAKE THE BACKGROUD COLOR WORKS*/
+    -moz-text-fill-color: transparent; 
+}
+.about-description p{
+    padding-top: 5%;
+    font-size: large;
+    margin: auto;
+}
+
+.category {
+    margin: 10px, 0px;
+    padding: 10px 10px;
+    height: 70%;
+    width: 100%;
+    display: flex;
+   /* border: black solid;*/
+}
+.category-img {
+    flex: 60%;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.description { /* category description*/
+    margin: auto;
+    text-align: center;
+    flex: 40%;
+    opacity: 0; /* set to enable transition*/
+    transform: translateY(50px);
+    transition: 0.7s all ease-in-out;
+}
+
+.description-active {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+/*
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade{
+    from {opacity: .4;}
+    to {opacity: 1}
+}
+
+@keyframe fade{
+    from {opacity: .4}
+    to {opacity: 1;}
+}*/
+
+.contact {
+    width: 100vw;
+    height: 30%;
+    font-size: large;
+}
+
+.contact h1 {
+    padding-top: 25px;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+ul {
+    padding-top: 15px;
+    display: flex;
+    justify-content: space-around;
+}
+
+li {
+    display: inline-flex;
+}
+
+@media screen and (max-width: 960px) {
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .logo {
+        padding-left: 10px;
+    }
+    
+    .navbar-container {
+        padding: 0 0;
+        display: flex;
+        justify-content: space-between;
+        max-width: 1300px;
+        width: 100%;
+    }
+
+    .burger {
+        display: block;
+        margin-left: 10px;
+        cursor: pointer;
+    }
+
+   .navlink {
+        display: none;
+    }
+
+    .navlink-active {
+        position: absolute;
+        font-size: 30px;
+        display: grid;
+        grid-template-columns: auto;
+        align-items: center;
+        text-align: center;
+        height: 60vh;
+        width: 100%;
+        z-index: 3;
+        top: 10%;
+        margin-left: 0;
+        background-color: rgb(247, 141, 247,0.5);
+    }
+
+    .section-container {
+        height: 100vh;
+        width: 100vw;
+        width: 100%;
+        display: block;
+    }
+    
+    /*slides show*/
+    .new-arrivals {
+        width: 100%;
+        height: 80%;
+        position: relative;
+        margin: auto;
+    }
+    
+    .mySlides {
+        display: none; /* will be toggled in js*/
+        height: 100%;
+        align-items: center;;
+    }
+    
+    .mySlides h1 {
+        display: none;
+    }
+    
+    .category {
+        display: grid;
+        height: 60%;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .description {
+        display: block;
+        margin-left: 10%;
+        color: white;
+        cursor: pointer;
+        position: absolute;
+        font-size: 20px;
+    }
+
+    .contact {
+        width: 100vw;
+        height: 30%;
+        font-size: large;
+    }
+    
+    .contact h1 {
+        padding-top: 25px;
+        text-align: center;
+        font-size: 2rem;
+        font-weight: bold;
+    }
+    
+    ul {
+        margin: auto;
+        padding-left: 10%;
+        display: list-item;
+    }
+    
+    li {
+        font-size: smaller;
+        flex: 33%;
+    }    
+}
+
+
